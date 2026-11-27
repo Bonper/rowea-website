@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA fallback.
+# Static files (robots.txt, sitemap.xml, manifest.webmanifest, /assets/*,
+# /src/assets/*, and prerendered /<route>/index.html) are served directly first.
+/* /index.html 200

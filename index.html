@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROWEA — Global Weather Platform | Weather. Everywhere.</title>
+    <meta
+      name="description"
+      content="Weather. Everywhere. A smarter view of our world. Explore the ROWEA global weather platform and find the right release path for your device."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ROWEA" />
+    <meta property="og:title" content="ROWEA — Global Weather Platform | Weather. Everywhere." />
+    <meta
+      property="og:description"
+      content="Weather. Everywhere. A smarter view of our world. Explore the ROWEA global weather platform and find the right release path for your device."
+    />
+    <meta property="og:url" content="https://rowea.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ROWEA — Global Weather Platform | Weather. Everywhere." />
+    <meta
+      name="twitter:description"
+      content="Weather. Everywhere. A smarter view of our world. Explore the ROWEA global weather platform and find the right release path for your device."
+    />
+    <link rel="canonical" href="https://rowea.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#10243B" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem('rowea-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+          var storedLang = localStorage.getItem('rowea-lang');
+          if (storedLang === 'vi' || storedLang === 'en') {
+            document.documentElement.lang = storedLang;
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F3F6FA] text-[#10243B] antialiased selection:bg-[#75C8D9]/30 dark:bg-[#0B1726] dark:text-[#F3F6FA]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

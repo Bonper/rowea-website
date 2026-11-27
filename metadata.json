@@ -1,0 +1,6 @@
+{
+  "name": "ROWEA — Global Weather Platform",
+  "description": "Weather. Everywhere. A smarter view of our world. Official website for the ROWEA global weather platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
